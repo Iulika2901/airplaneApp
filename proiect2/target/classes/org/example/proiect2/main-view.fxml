@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.proiect2.Controller">
+    <TextField fx:id="departmentIdField" layoutX="14.0" layoutY="14.0" promptText="Enter Department ID"/>
+    <Button fx:id="searchButton" layoutX="200.0" layoutY="14.0" text="Search" onAction="#searchEmployees"/>
+    <TableView fx:id="employeeTable" layoutX="14.0" layoutY="60.0" prefWidth="760.0" prefHeight="400.0">
+        <columns>
+            <TableColumn fx:id="lastNameColumn" text="Last Name"/>
+            <TableColumn fx:id="firstNameColumn" text="First Name"/>
+            <TableColumn fx:id="salaryColumn" text="Salary"/>
+        </columns>
+    </TableView>
+</AnchorPane>
